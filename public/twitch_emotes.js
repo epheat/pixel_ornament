@@ -19,19 +19,26 @@ function preload() {
 
 function setup() {
   createCanvas(1250,600);
-  background(30,30,30,255);
-
-  for(var counter=0;counter<10;counter=counter+1){
-    push();
-    translate(50+counter*100,200);
-    rotate(radians(counter*45));
-      image(Kappa,0,0,200,200);
-    translate();
-    pop();
-  }
-
+  background(200,200,200,255);
+  frameRate(50);
 }
 
+var j = 0;
 function draw() {
+  background(200,200,200,255);
+  j = ((j+1)%25);
+  for(var i=0;i<90;i++){
+    push();
+    translate(13*i,40+30*sin((i+j)/4));
+    image(Kappa,0,0,80,80);
+    image(BrokeBack,0,60,80,80);
+    image(OhMyDog,0,120,80,80);
+    image(SeemsGood,0,180,80,80);
+    image(OpieOP,0,240,80,80);
+    image(MingLee,0,300,80,80);
+    image(deIlluminati,0,360,80,80);
+    image(WutFace,0,420,80,80);
+    pop();
+  }
 
 }
