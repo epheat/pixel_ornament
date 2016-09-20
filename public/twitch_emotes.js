@@ -1,5 +1,6 @@
 
 var AMPTropPunch, BrokeBack, deIlluminati, EleGiggle, imGlitch, Kappa, MingLee, OhMyDog, OpieOP, SeemsGood, WutFace;
+var canvas;
 // var Emotes = [AMPTropPunch, BrokeBack, deIlluminati, EleGiggle, imGlitch, Kappa, MingLee, OhMyDog, OpieOP, SeemsGood, WutFace];
 
 function preload() {
@@ -19,7 +20,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1250,750);
+  canvas = createCanvas(1250,750);
   background(200,200,200,255);
   frameRate(50);
 }
@@ -45,5 +46,8 @@ function draw() {
   }
   image(frame,0,0,1100,750);
 
+  // if (j == 0) {
+  //   save(canvas, "twitch_emotes.jpg");
+  // }
 
 }
